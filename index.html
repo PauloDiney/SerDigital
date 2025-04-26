@@ -2,9 +2,12 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ser Digital</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap"
@@ -13,15 +16,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="estilo.css" />
     <link rel="shortcut icon" href="./imagens/SER-DIGITAL.svg" type="image/x-icon">
-
-    <!-- AOS CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-
   </head>
 
   <body>
     <div class="content-wrapper-center" id="home">
-      <header class="header" data-aos="fade-down">
+      <header class="header">
         <a href="index.html"
           ><img src="imagens/SER-DIGITAL.svg" alt="Logotipo Ser digital"
         /></a>
@@ -40,7 +39,7 @@
       </header>
 
       <!-- Hero Banner -->
-      <section class="hero row" data-aos="fade-up">
+      <section class="hero row fade-in">
         <div class="content sm-12 lg-7">
           <header>
             <h1 class="hero_title">
@@ -60,7 +59,7 @@
       </section>
 
       <!-- Brands -->
-      <section class="brands" data-aos="fade-left">
+      <section class="brands fade-in">
         <h2>Algumas empresas que confiam em nossos serviços</h2>
         <ul>
           <li><img src="imagens/spotify.svg" alt="spotify" /></li>
@@ -71,7 +70,7 @@
       </section>
 
       <!-- Branding section -->
-      <section class="branding row" id="sobre" data-aos="fade-up">
+      <section class="branding row fade-in" id="sobre">
         <article class="sm-12 md-7-12 lg-8-12">
           <h2>Branding &amp; Design system</h2>
           <p>
@@ -89,7 +88,7 @@
       </section>
 
       <!-- Results section -->
-      <section class="results row" data-aos="fade-right">
+      <section class="results row fade-in">
         <article class="sm-12 md-6 lg-5">
           <h2>Análise de resultados</h2>
           <p>
@@ -107,10 +106,10 @@
       </section>
 
       <!-- Testemunhos -->
-      <section class="testemunhos" id="testemunhos" data-aos="fade-up">
+      <section class="testemunhos" id="testemunhos">
         <h2 class="testemunhos_title">O que nossos clientes nos dizem</h2>
         <div class="testemunhos_wrapper row">
-          <article class="testemunho sm-12 lg-4">
+          <article class="testemunho sm-12 lg-4 fade-in">
             <img
               src="imagens/western-man-4975942-4159828-1-2x.png"
               alt=""
@@ -124,7 +123,7 @@
               </p>
             </div>
           </article>
-          <article class="testemunho sm-12 lg-4">
+          <article class="testemunho sm-12 lg-4 fade-in">
             <img
               src="imagens/western-man-4975942-4159828-2-2x.png"
               alt=""
@@ -140,7 +139,7 @@
               </p>
             </div>
           </article>
-          <article class="testemunho sm-12 lg-4">
+          <article class="testemunho sm-12 lg-4 fade-in">
             <img
               src="imagens/western-man-4975942-4159828-3-2x.png"
               alt=""
@@ -157,8 +156,8 @@
         </div>
       </section>
 
-      <article class="contato row" id="contato" data-aos="fade-up">
-        <div class="contato_content sm-12 lg-8-12">
+      <article class="contato row fade-in" id="contato">
+        <div class="contato_content sm-12 lg-8-12 ">
           <h2 class="contato_title">Faça parte de algo grande</h2>
           <p>
             Nós trabalhamos com empresas de qualquer tamanho e estamos
@@ -173,9 +172,9 @@
     </div>
 
     <!-- Footer -->
-    <footer class="footer " data-aos="fade-up">
-      <div class="content-wrapper-center row">
-        <section class="sm-12 md-9 lg-6">
+    <footer class="footer  ">
+      <div class="content-wrapper-center  row ">
+        <section class="sm-12 md-9 lg-6 fade-in">
           <header>
             <a href="index.html" class="logo">Ser Digital</a>
             <p>produtos, marcas &amp; experiências Digitais</p>
@@ -205,7 +204,7 @@
           </ul>
         </section>
 
-        <section class="sm-12 md-3 lg-3">
+        <section class="sm-12 md-3 lg-3 fade-in">
           <header>
             <h3>Company</h3>
           </header>
@@ -217,7 +216,7 @@
           </ul>
         </section>
 
-        <section class="sm-12 lg-3">
+        <section class="sm-12 lg-3 fade-in">
           <header>
             <h3>Contato</h3>
           </header>
@@ -227,7 +226,7 @@
           </ul>
         </section>
 
-        <section class="copyright content-wrapper-center sm-12">
+        <section class="copyright content-wrapper-center sm-12 fade-in">
           &copy; Paulo  - @PauloDiney <wbr /> Todos os direitos reservados
           <wbr /> 
           <wbr /> https://github.com/PauloDiney <wbr />
@@ -235,10 +234,8 @@
       </div>
     </footer>
 
-    <!-- AOS JS -->
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+
+
+    <script src="app.js"></script>
   </body>
 </html>
