@@ -2,7 +2,6 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ser Digital</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,11 +13,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="estilo.css" />
     <link rel="shortcut icon" href="./imagens/SER-DIGITAL.svg" type="image/x-icon">
+
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
   </head>
 
   <body>
     <div class="content-wrapper-center" id="home">
-      <header class="header">
+      <header class="header" data-aos="fade-down">
         <a href="index.html"
           ><img src="imagens/SER-DIGITAL.svg" alt="Logotipo Ser digital"
         /></a>
@@ -37,7 +40,7 @@
       </header>
 
       <!-- Hero Banner -->
-      <section class="hero row">
+      <section class="hero row" data-aos="fade-up">
         <div class="content sm-12 lg-7">
           <header>
             <h1 class="hero_title">
@@ -57,7 +60,7 @@
       </section>
 
       <!-- Brands -->
-      <section class="brands">
+      <section class="brands" data-aos="fade-left">
         <h2>Algumas empresas que confiam em nossos serviços</h2>
         <ul>
           <li><img src="imagens/spotify.svg" alt="spotify" /></li>
@@ -68,7 +71,7 @@
       </section>
 
       <!-- Branding section -->
-      <section class="branding row" id="sobre">
+      <section class="branding row" id="sobre" data-aos="fade-up">
         <article class="sm-12 md-7-12 lg-8-12">
           <h2>Branding &amp; Design system</h2>
           <p>
@@ -86,7 +89,7 @@
       </section>
 
       <!-- Results section -->
-      <section class="results row">
+      <section class="results row" data-aos="fade-right">
         <article class="sm-12 md-6 lg-5">
           <h2>Análise de resultados</h2>
           <p>
@@ -104,7 +107,7 @@
       </section>
 
       <!-- Testemunhos -->
-      <section class="testemunhos" id="testemunhos">
+      <section class="testemunhos" id="testemunhos" data-aos="fade-up">
         <h2 class="testemunhos_title">O que nossos clientes nos dizem</h2>
         <div class="testemunhos_wrapper row">
           <article class="testemunho sm-12 lg-4">
@@ -154,7 +157,7 @@
         </div>
       </section>
 
-      <article class="contato row" id="contato">
+      <article class="contato row" id="contato" data-aos="fade-up">
         <div class="contato_content sm-12 lg-8-12">
           <h2 class="contato_title">Faça parte de algo grande</h2>
           <p>
@@ -170,7 +173,7 @@
     </div>
 
     <!-- Footer -->
-    <footer class="footer ">
+    <footer class="footer " data-aos="fade-up">
       <div class="content-wrapper-center row">
         <section class="sm-12 md-9 lg-6">
           <header>
@@ -231,5 +234,11 @@
         </section>
       </div>
     </footer>
+
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
