@@ -223,6 +223,7 @@ img {
     background-color: var(--light);
     transition: max-height .5s ease-in-out;
     padding: 0 1rem;
+    z-index: 1;
 
     /* max-width: 100vh; */
 }
